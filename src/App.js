@@ -81,7 +81,8 @@ const pokemon = useSelector(state=>state.pokemon)
     const fetchdata = async () => {
       try {
         const { data } = await axios.get(
-          "http://127.0.0.1:5500/src/pokemon.json"
+         // "http://127.0.0.1:5500/src/pokemon.json"
+         "/pokemon.json"
         );
         dispatch({
           type: "SET_POKEMON",
@@ -110,7 +111,7 @@ const pokemon = useSelector(state=>state.pokemon)
 
         <PokemonTable />
 
-        <div style={{ backgroundColor: "#880808" }}>
+        <div style={{ backgroundColor: "#d84242" }}>
           <PokemonInfo />
           {/* {selectedPokemon && <PokemonInfo  {...selectedPokemon} />} */}
 
