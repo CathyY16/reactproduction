@@ -111,7 +111,7 @@ const pokemon = useSelector(state=>state.pokemon)
 
         <PokemonTable />
 
-        <div style={{ backgroundColor: "#d84242" }}>
+        <div style={{ backgroundColor: "#e146c7" }}>
           <PokemonInfo />
           {/* {selectedPokemon && <PokemonInfo  {...selectedPokemon} />} */}
 
